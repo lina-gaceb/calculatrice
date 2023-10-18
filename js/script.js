@@ -39,7 +39,9 @@ for (let i = 9; i >= 0; i--)
 /*------------------------------Creation point--------------------------------*/
 let pointCalc = document.createElement("button");
 pointCalc.innerText = ".";
+
 pointCalc.classList.add("chiffre-Calc");
+
 boxNumCalc.appendChild(pointCalc);
 
 pointCalc.addEventListener("click", 
@@ -59,6 +61,7 @@ acBtnCalc.addEventListener("click" , function() {
     ecranCalc = document.querySelector(".ecran-calc");
     affichageCalc = [];
     boxNumCalc.appendChild(acBtnCalc);
+
     affichageCalc = [];
     ecranCalc.innerText = 0;
 }
@@ -97,6 +100,7 @@ btnEgal.innerText ="=";
 btnEgal.classList.add("btn-egal");
 boxOpeCalc.appendChild(btnEgal);
 
+
 btnEgal.addEventListener("click" , function() {
     
     ecranCalc.innerText = calcul();
@@ -112,6 +116,7 @@ function calcul(){
     return resultat;
 
 };
+
 /*------------------FOOTER----------------------------------------------*/
 let footer = document.createElement("footer");
 document.body.appendChild(footer);
@@ -119,6 +124,7 @@ console.log(footer);
 let p = document.createElement("p");
 footer.appendChild(p);
 p.innerText = "Fait en 2023 JS HTML CSS";
+
 
 
 
